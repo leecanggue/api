@@ -15,7 +15,7 @@ public class InstanceOfDemo {
 	}
 	public void doWork(Car c){
 		/*
-		 * 소방차가 Car 타입인지 확인후
+		 * 파라미터로 넘어온 C 가 FireCar 타입인지 확인후
 		 * 맞다면 (FireCar) 로 객체 캐스팅을 하라
 		 */
 		if(c instanceof FireCar){
@@ -24,7 +24,7 @@ public class InstanceOfDemo {
 			f.stop();
 			f.shootWater();
 			/*
-			 * 소방차가 Car 타입인지 확인후
+			 * 소방차가 Amblulance 타입인지 확인후
 			 * 맞다면 (Amblulance) 로 객체 캐스팅을 하라
 			 */
 		}else if(c instanceof Amblulance){
@@ -71,3 +71,4 @@ class Amblulance extends Car{ // Car 클래스를 상속받은 엠뷸런스
 
 
 
+ 
