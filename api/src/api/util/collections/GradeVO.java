@@ -1,4 +1,4 @@
-package api.util.vector;
+package api.util.collections;
 
 public class GradeVO {
 	// 변수 선언시 동일한 타입이 있으면 하나의 타입당 여러개의 변수를 선언해도 된다.
@@ -54,7 +54,7 @@ public class GradeVO {
 	 * 국어 + 영어 + 수학
 	 */
 	public int getTotal(){
-		return 0 ;
+		return this.kor + this.eng + this.math ;
 	}
 	@Override
 	public String toString() {
